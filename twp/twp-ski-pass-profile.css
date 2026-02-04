@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/* CSS Document */
+h1{
+			color:red;
+			background-color:gold
+
+}
+p{
+			color:green; 
+			background-color:beige; 
+			line-height: 10px;
+
+}
+h2{
+			color:darkturquoise; 
+			background-color:darkgreen; 
+}
+body{
+	background: chartreuse;
+	margin: 0;
+	padding: 0;
+}
