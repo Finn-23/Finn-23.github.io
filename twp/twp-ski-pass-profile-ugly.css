@@ -1,0 +1,99 @@
+@charset "UTF-8";
+/* CSS Document */
+
+h1 {
+	border: 1px solid yellow;
+	width: 300px;
+	color: red;
+	animation: mymove 2s infinite;
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+}
+
+@keyframes mymove{
+	50% {color:aqua; width: 600px; border: 20px dotted purple}
+}
+
+.wrapper {
+	width: 900px;
+	margin: 0 auto; 
+	line-height: 10px;
+	animation: wrappermove 2s infinite; 
+}
+
+@keyframes wrappermove {
+	50% {width: 300px; height: 50px;}
+}
+
+h2 {
+	color:palevioletred; 
+	background-color: aquamarine;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-size: 20px; 
+	margin: 20px auto; 
+}
+
+body{
+	background-color:chartreuse; 
+	cursor:text;
+	margin: 0px;
+	border: ridge 60px #34B858; 
+	padding: 0px;
+	animation: bodycolor 1s infinite; 
+}
+
+@keyframes bodycolor {
+	50% {background-color: darkorange;}
+}
+
+p{
+	cursor:crosshair;
+	color: indigo;
+	background-color: hotpink;
+	border: solid 20px #76D5C1;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+
+p:hover{
+	transform:scaleX(-1);
+	zoom: 300%; 
+}
+
+ul {
+	color: linen;
+	background-color: maroon;
+	font-size: 25px;
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	border: ridge orange 50px; 
+}
+
+h3 {
+	color: cornflowerblue;
+	background-color: darkgoldenrod;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	
+}
+
+img{
+	cursor:grab;
+	border-top-left-radius:50%; 
+	border-bottom-right-radius:0;
+	border: dotted thick black;
+	animation: imgmove 1s infinite; 
+}
+img:hover {
+	transform:scaleX(-1);
+}
+
+a {
+	font-size: 35px; 
+	color: darkorange;
+}
+
+a:hover {
+	zoom: 400%;
+}
+
+
+@keyframes imgmove {
+	50% {border-top-left-radius:0%;border-bottom-right-radius:50%}
+}
