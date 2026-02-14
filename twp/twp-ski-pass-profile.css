@@ -1,22 +1,78 @@
 @charset "UTF-8";
 /* CSS Document */
-h1{
-			color:red;
-			background-color:gold
 
-}
-p{
-			color:green; 
-			background-color:beige; 
-			line-height: 10px;
 
-}
-h2{
-			color:darkturquoise; 
-			background-color:darkgreen; 
-}
+
 body{
-	background: chartreuse;
+	background: #0B4902;
+	color: whitesmoke;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
 	margin: 0;
 	padding: 0;
+	font-size: 20px; 
+	line-height: 150%;
+}
+
+a {
+	color: lightgray;
+}
+a:hover {
+	color: lightskyblue;
+}
+
+img {
+	border: thick white solid;
+}
+
+.wrapper {
+	width: 972px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 2px white solid;
+	background: #386832;
+	padding: 20px 40px;
+}
+
+header {
+	background: #0B2A00;
+	padding: 20px 40px;
+}
+
+nav.page-nav a {
+	text-decoration: none;
+}
+
+nav.site-nav a {
+	text-decoration: none;
+	color: whitesmoke;
+	font-weight: bold;
+	font-size: 40px;
+	padding: 5px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+nav.site-nav a:hover{
+	color: greenyellow;
+	background: #0E6404;
+}
+
+thead {
+	background: #002D00;
+	
+}
+table {
+	background: #1E6C27;
+	text-align: center;
+	border: 5px #002D00 solid;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+tr {
+	font-size: 15px;
+}
+
+tr:nth-child(even) {
+	background: #05A63B;
 }
