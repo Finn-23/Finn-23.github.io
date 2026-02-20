@@ -22,6 +22,11 @@ a:hover {
 
 img {
 	border: thick white solid;
+	width: 300px;
+}
+img:hover {
+	border-radius: 15px;
+	transform: scale(105%);
 }
 
 .wrapper {
@@ -51,15 +56,46 @@ nav.site-nav a {
 	margin-left: 10px;
 	margin-right: 10px;
 }
+.site-nav {
+	display: flex;
+	flex-direction: row; 
+	justify-content: flex-start;
+	align-items: center;
+	column-gap: 32px;
+}
 
 nav.site-nav a:hover{
 	color: greenyellow;
 	background: #0E6404;
 }
 
+.gallery-grid {
+	display: grid;
+	grid-template-columns: auto auto auto; 
+	grid-row-gap: 20px; 
+	justify-items: center; 
+	align-items: start;
+	justify-content: space-between; 
+}
+
+.gallery-item {
+	width: 300px;
+	text-align: center;
+}
+
+
+.gallery-grid p {
+	margin: .25em 0;
+	line-height: 135%; 
+}
+
 thead {
 	background: #002D00;
 	
+}
+i.fa-explosion {
+	color:red;
+	font-size: 40px;
 }
 table {
 	background: #1E6C27;
@@ -75,4 +111,22 @@ tr {
 
 tr:nth-child(even) {
 	background: #05A63B;
+}
+
+i {
+	color: black;
+	font-size: 25px;
+	padding-top: 5px;
+}
+i.fa-trash {
+	color: #9D9D9D;
+}
+i.fa-fire-flame-curved {
+	color: #F19900;
+}
+i.fa-hammer {
+	color:#6D4301;
+}
+i.fa-hand-holding-heart {
+	color:palevioletred;
 }
