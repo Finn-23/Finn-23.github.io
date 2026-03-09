@@ -16,6 +16,9 @@ body{
 a {
 	color: lightgray;
 }
+span {
+	color: yellow;
+}
 a:hover {
 	color: lightskyblue;
 }
@@ -24,9 +27,28 @@ img {
 	border: thick white solid;
 	width: 300px;
 }
-img:hover {
+img.truck {
+  padding: inherit;
+  margin:auto;
+  width: 600px;
+  display: block;
+  border: none;
+	
+}
+img.profile {
+	border: none;
+	width: 150px;
+	padding: inherit;
+	margin: auto;
+	display: block;
+}
+/*img:hover {
 	border-radius: 15px;
 	transform: scale(105%);
+}*/
+.legend {
+	/*border: thick white solid;*/
+	text-align: center;
 }
 
 .wrapper {
@@ -129,4 +151,47 @@ i.fa-hammer {
 }
 i.fa-hand-holding-heart {
 	color:palevioletred;
+}
+i.fa-baby {
+	color: #96DD14;
+}
+i.fa-person {
+	color: #C8BD00;
+}
+i.fa-person-cane {
+	color: #B41B1D;
+}
+
+footer {
+	background: #0B2A00;
+	padding: 20px 40px;
+}
+
+img.logo {
+	border: none;
+}
+p.socials {
+	text-align: center;
+}
+
+i.fa-instagram {
+	font-size: 100px;
+	color: whitesmoke;
+}
+i.fa-instagram:hover {
+	color: lightskyblue;
+}
+i.fa-linkedin {
+	font-size: 100px;
+	color: whitesmoke;
+}
+i.fa-linkedin:hover {
+	color: lightskyblue;
+}
+i.fa-x-twitter {
+	font-size: 100px;
+	color: whitesmoke;
+}
+i.fa-x-twitter:hover {
+	color: lightskyblue;
 }
