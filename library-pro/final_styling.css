@@ -1,0 +1,60 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.wrapper {
+	width: 972px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 2px white solid;
+	border-radius: 25px;
+	background: #C0DBC9;
+	padding: 20px 40px;
+}
+body{
+	background: #8FB499;
+	color: #5C5959;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	margin: 0;
+	padding: 0;
+	font-size: 20px; 
+	line-height: 150%;
+}
+
+.article-grid {
+	display: grid;
+	gap: 0.5em 1.5em;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: repeat(5, auto);
+	grid-template-areas:
+		"rheader rheader rheader rheader rheader rheader"
+		"rlead rlead rlead rlead rinfo rinfo"
+		"rbyline rbyline rbyline rbyline rinfo rinfo"
+		"rtext rtext rtext rtext rinfo rinfo"
+		"rfooter rfooter rfooter rfooter rfooter rfooter";
+}
+
+.article-grid .review-header {
+	grid-area: rheader;
+}
+.article-grid .review-lead {
+	grid-area: rlead;
+}
+
+.article-grid .review-byline {
+	grid-area: rbyline;
+}
+.article-grid .review-info {
+	grid-area: rinfo;
+}
+.article-grid .review-text {
+	grid-area: rtext;
+}
+.article-grid .review-footer {
+	grid-area: rfooter;
+}
+.image-grid {
+	display: grid;
+	gap: 0.5em 1.5em;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(6, auto)
+}
