@@ -56,5 +56,32 @@ body{
 	display: grid;
 	gap: 0.5em 1.5em;
 	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: repeat(6, auto)
+	grid-template-rows: repeat(3, auto);
+	grid-template-areas:
+		"solitary-natural solitary-artifical"
+		"collaborative-natural collaborative-artifical"
+		"mixed-natural mixed-artifical"
 }
+.image-grid .solitary-natural {
+	grid-area: solitary-natural;
+}
+.image-grid .solitary-artifical {
+	grid-area: solitary-artifical;
+}
+
+.image-grid .group-natural {
+	grid-area: collaborative-natural;
+}
+
+.image-grid .group-artifical {
+	grid-area: collaborative-artifical;
+}
+
+.image-grid .mixed-artifical {
+	grid-area: mixed-artifical;
+}
+
+.image-grid .mixed-natural {
+	grid area: mixed-natural;
+}
+
