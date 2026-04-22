@@ -305,4 +305,57 @@ tr:nth-child(even) {
 }
 
 
+.worldmap {
+	width: 900px;
+	height: 600px;
+	border: solid white 2px;
+	background: url("map-of-third-floor.svg") no-repeat;
+	background-size: 900px 600px;
+	padding: 0;
+	marign: 0;
+	position: relative;
+}
 
+.worldmap-item {
+	height: 24px;
+	position: absolute;
+}
+
+#world-map-stairs {
+	top: 350px; 
+	left: 500px;
+}
+
+#world-map-study-room {
+	top: 300px;
+	left: 675px;
+}
+#world-solitary-space {
+	top: 100px;
+	left: 800px;
+}
+#world-group-space {
+	top: 300px;
+	left: 200px;
+}
+#world-solo-desks {
+	top: 475px;
+	left: 100px;
+}
+
+
+
+.worldmap-item .hidden-label {
+	display: none;
+	background: gray;
+	color: whitesmoke;
+	float: right;
+	margin-left: 3px;
+}
+.worldmap-item .hidden-label img {
+	width: 200px;
+}
+
+.worldmap-item:hover .hidden-label {
+	display: inline-block;
+}
