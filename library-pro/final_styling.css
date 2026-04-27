@@ -56,6 +56,7 @@ header {
 	background: #5C5959;
 	border: 2px white solid;
 	padding: 5px 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 .reviews-page-nav a:hover {
 	background: #BCB4B4;
@@ -202,6 +203,7 @@ nav.site-nav a{
 	border: 2px #8FB499 solid;
 	align-self: center;
 	border-radius: 25px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, .4);
 }
 .article-grid .review-text {
 	grid-area: rtext;
@@ -304,6 +306,73 @@ tr:nth-child(even) {
 	background: #6AA471;
 }
 
+.biography {
+	display: grid;
+	gap: 0.5em 0.5em;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-template-areas: 
+		"photo-id job"
+		"photo-id desc"
+}
+.photo-identity {
+	grid-area: photo-id;
+}
+.job {
+	margin: 0px;
+	grid-area: job;
+}
+.desc {
+	margin: 0px;
+	grid-area: desc;
+}
+
+.timeline {
+	display: grid;
+	margin: 0 auto;
+	padding: 25px;
+	grid-template-columns: 1fr 3px 1fr;
+}
+.date {
+	margin: 10px 10px;
+}
+
+.date--right {
+	text-align: right;
+}
+.date-left {
+	text-align: left;
+}
+.middle-bar {
+	position: relative;
+	background: white;
+}
+.middle-circle {
+	top: 0px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 20px;
+	position: absolute;
+	border-radius: 50%;
+	height: 20px;
+	background: white;
+}
+.middle-circle-bottom {
+	top: initial;
+	bottom: 0;
+}
+
+.components-bg {
+	background: #398254;
+	border-radius: 15px;
+	padding: 1.5em;
+	margin: 25px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.timeline-title {
+	margin: 0px;
+}
 
 .worldmap {
 	width: 900px;
