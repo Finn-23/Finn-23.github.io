@@ -57,6 +57,7 @@ header {
 	border: 2px white solid;
 	padding: 5px 10px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+	transition: all 0.3s ease-out;
 }
 .reviews-page-nav a:hover {
 	background: #BCB4B4;
@@ -93,6 +94,8 @@ header {
 	background: #5C5959;
 	border: 2px white solid;
 	padding: 5px 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+	transition: all 0.3s ease-out;
 }
 .inventory-page-nav a:hover {
 	background: #BCB4B4;
@@ -130,9 +133,11 @@ header {
 	grid-template-columns: repeat(7, 1fr);
 	grid-template-areas:
 		"logo . rpage ppage mpage fpage apage";
+	
 }
 .site-nav a {
 	border: 2px #5C5959 solid;
+	transition: all 0.3s ease-out;
 }
 .site-nav a:hover {
 	border: 2px white solid;
@@ -277,6 +282,7 @@ nav.site-nav a{
 .image-grid img {
 	border: 2px white solid;
 	border-radius: 15px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
 footer {
@@ -314,6 +320,10 @@ tr:nth-child(even) {
 	grid-template-areas: 
 		"photo-id job"
 		"photo-id desc"
+}
+.biography img {
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+	border-radius: 5px;
 }
 .photo-identity {
 	grid-area: photo-id;
@@ -377,7 +387,6 @@ tr:nth-child(even) {
 .worldmap {
 	width: 900px;
 	height: 600px;
-	border: solid white 2px;
 	background: url("map-of-third-floor.svg") no-repeat;
 	background-size: 900px 600px;
 	padding: 0;
@@ -412,6 +421,14 @@ tr:nth-child(even) {
 	left: 100px;
 }
 
+#world-group-space-2 {
+	top: 100px;
+	left: 100px;
+}
+#world-shelves {
+	top: 100px;
+	left: 550px;
+}
 
 
 .worldmap-item .hidden-label {
@@ -428,3 +445,50 @@ tr:nth-child(even) {
 .worldmap-item:hover .hidden-label {
 	display: inline-block;
 }
+
+.map-header h1 {
+	text-align: center;
+	color: white;
+}
+.about-us-header h1 {
+	text-align: center; 
+	color: white;
+}
+
+.employee {
+	color: #5E7C5D;
+	font-weight: bold;
+}
+
+.timeline h2 {
+	color: #7DA37A;
+}
+
+.timeline p {
+	color: #9BB49D;
+}
+
+.desc-box img {
+	display: block;
+	height: 450px;
+	width: 600px;
+	border-radius: 5%;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+	margin: auto;
+}
+
+.map-desc {
+	display: grid;
+	gap: 4em;
+	margin: 10px;
+}
+.desc-box {
+	background: #668D66;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+	border-radius: 5%;
+	padding: 5px;
+	text-align: center;
+	color: white;
+	
+}
+
