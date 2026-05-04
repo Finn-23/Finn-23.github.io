@@ -492,3 +492,85 @@ tr:nth-child(even) {
 	
 }
 
+
+
+
+.main-img img {
+	width: 972px;
+}
+.main-img h2 {
+	position: absolute;
+	top: 50%;
+	left: 60%;
+	right: 20%;
+	background: #3C903A;
+	line-height: 50px;
+	color: #91DF83;
+	font-size: 48px;
+	border-radius: 15%;
+	padding: 10px 10px;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+}
+
+
+.main-grid {
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	align-content: center;
+	padding: 5px 10px;
+
+	text-align: center;
+	line-height: 50px;
+	grid-template-areas: 
+		"thing1 thing2 thing3";
+	
+}
+.main-grid img {
+	 width: 200px;
+	height: 200px;
+}
+
+.main-grid h3 {
+		font-size: 35px;
+}
+.thing-1 {
+	grid-area: thing1;
+	justify-self: center;
+	color: whitesmoke;
+	border-radius: 15px;
+	background: #5C5959;
+	border: 2px white solid;
+		margin: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+	transition: all 0.3s ease-out;
+}
+.thing-2 {
+	grid-area: thing2;
+	justify-self: center;
+	color: whitesmoke;
+	border-radius: 15px;
+	background: #5C5959;
+	border: 2px white solid;
+		margin: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+	transition: all 0.3s ease-out;
+}
+.thing-3 {
+	grid-area: thing3;
+	justify-self: center;
+	color: whitesmoke;
+	border-radius: 15px;
+		margin: 10px;
+	background: #5C5959;
+	border: 2px white solid;
+
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+	transition: all 0.3s ease-out;
+}
+.intro {
+	text-align: center;
+	background: #618B5D;
+	color: #E0F2E1;
+	padding: 10px;
+	border-radius: 15px;
+}
